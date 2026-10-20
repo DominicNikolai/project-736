@@ -7,7 +7,7 @@
     ShaderMaterial,
     Timer,
     Vector2,
-    WebGLRenderer,
+    WebGLRenderer
   } from 'three';
   import GUI from 'lil-gui';
 
@@ -24,7 +24,7 @@
     speed: 0.254,
     baseDensity: 0.1,
     glowStrength: 0.0078,
-    colorBoost: 1.8,
+    colorBoost: 1.8
   };
 
   renderer.setPixelRatio(window.devicePixelRatio * params.dpr);
@@ -188,14 +188,14 @@
         value: new Vector2(
           window.innerWidth * initialPixelRatio,
           window.innerHeight * initialPixelRatio
-        ),
+        )
       },
       uTime: { value: 0.0 },
       uSpeed: { value: params.speed },
       uBaseDensity: { value: params.baseDensity },
       uGlowStrength: { value: params.glowStrength },
-      uColorBoost: { value: params.colorBoost },
-    },
+      uColorBoost: { value: params.colorBoost }
+    }
   });
 
   const mesh = new Mesh(geometry, material);
